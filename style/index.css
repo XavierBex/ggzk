@@ -128,7 +128,7 @@ body {
 }
 
 .number.milliseconds {
-  style="display:none;"
+  display:none;
   flex: 0 0 30px;
   font-size: 16px;
 }
