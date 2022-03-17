@@ -192,7 +192,7 @@ function main() {
   var clockNumS = $('#clockNumS')
   var clockNumD = $('#clockNumD')
 
-  targetYear.innerText = GOLOBAL.deadline.targetYear + ' 一“研”为定！';
+  targetYear.innerText = ' 2022 贵港中考倒计时';
 
   GOLOBAL.setCyclicMottos()
   GOLOBAL.setCyclicImages()
@@ -255,7 +255,7 @@ function getDeadline() {
   const m = 11;
   const roughDate = new Date(y, m, 20);
   const d = roughDate.getDay();
-  deadline = d === 6 ? roughDate : new Date(y, m, 20 + 6 - d)
+  deadline = d === 6 ? roughDate : new Date(2022, 05, 26 - d)
 
   return {
     expired: now > deadline,
