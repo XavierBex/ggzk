@@ -332,7 +332,7 @@ function setScaleRate(rate) {
 function setPrecision(precision) {
   console.log(precision)
   precision *= 2
-  const Els = [hours, hourSep, minutes, minSep, seconds, secSep, milliseconds]
+ const Els = [hours, hourSep, minutes, minSep, seconds, secSep, milliseconds]
   Els.forEach((el, i) => {
     if (i >= precision)
       el.style.display = 'none'
